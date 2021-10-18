@@ -2,32 +2,52 @@
 /**
  * Write a description of class Module here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Maciej Pinkowski)
+ * @version (18.10.2021)
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    
+    private String code;
+    private String title;
+    private int credit;
+    
 
-    /**
-     * Constructor for objects of class Module
-     */
-    public Module()
+public Module (String code, String title, int credit)
     {
-        // initialise instance variables
-        x = 0;
+        this.code = code;
+        this.title = title;
+        credit = 0;
+    }  
+    
+public String getCode()
+    {
+        return code;
+    }
+    
+public String getTitle()
+    {
+        return title;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+public void setCredit(int credit)
     {
-        // put your code here
-        return x + y;
+        this.credit = credit;
+    }
+    
+    {
+        printHeading();
+        
+        System.out.println(" Module Code: " + code + ": " + title);
+        System.out.println(" Credits for: " + title + ": " + credit);
+        System.out.println();
+    }
+    
+private void printHeading()
+    {
+        System.out.println(" --------------------------------");
+        System.out.println("   App211: Module Details");
+        System.out.println(" --------------------------------");
+        System.out.println();
     }
 }
