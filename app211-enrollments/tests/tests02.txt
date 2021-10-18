@@ -1,0 +1,35 @@
+programming.print();
+ --------------------------------
+   App211: Module Details
+ --------------------------------
+
+ Module Code: CO452: Programming Concepts
+ Credits for: Programming Concepts: 0
+
+programming.setCredit(15);
+programming.print();
+ --------------------------------
+   App211: Module Details
+ --------------------------------
+
+ Module Code: CO452: Programming Concepts
+ Credits for: Programming Concepts: 15
+
+Student Maciej = new Student("Maciej Pinkowski", 22015039);
+Course GameDev = new Course("BT1GDV1", "BSc Games Development");
+GameDev.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1GDV1: BSc Games Development
+
+Maciej.enrol(GameDev);
+GameDev.add(programming);
+programming.print();
+ --------------------------------
+   App211: Module Details
+ --------------------------------
+
+ Module Code: CO452: Programming Concepts
+ Credits for: Programming Concepts: 15
