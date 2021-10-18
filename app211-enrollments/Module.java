@@ -34,7 +34,7 @@ public void setCredit(int credit)
     {
         this.credit = credit;
     }
-    
+     public void print()
     {
         printHeading();
         
