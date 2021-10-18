@@ -6,6 +6,7 @@
  * @version (a version number or a date)
  */
 public class Module
+{
     // instance variables - replace the example below with your own
     private int x;
 
