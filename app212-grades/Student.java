@@ -4,7 +4,7 @@ import java.util.*;
  * It holds the student details relevant in our context.
  * 
  * @author Michael Kölling and David Barnes
- * Modified by Derek Peacock & Nicholas Day
+ * Modified by Maciej Pinkowski
  * @version 2021-08-18
  */
 public class Student
@@ -24,7 +24,7 @@ public class Student
      */
     public Student()
     {
-        this("Derek", 12345678);
+        this("Maciej", 22015039);
     }
     
     /**
@@ -104,7 +104,7 @@ public class Student
     
     private void printModules()
     {
-
+           
     }
     
     public void printTranscript()

@@ -4,6 +4,7 @@ import java.util.ArrayList;
  * that enrolled students may want to complete
  *
  * @author Derek Peacock and Nicholas Day
+ * Modified by Maciej Pinkowski
  * @version 0.1 11/Sep/2020
  */
 public class Course
@@ -14,12 +15,12 @@ public class Course
     
     private String code;
     private String title;
-    
+    private Module module;
     private Grades finalGrade;
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("CO452", "BSc GamesDevelopment");
     }
     
     /**
@@ -84,11 +85,11 @@ public class Course
         printModules();
     }
     
-    /**
-     * Print the course's four modules
-     */
     public void printModules()
-    {
-        System.out.println();
-    }
+        {for (Module module :modules)
+            {module.print();
+            module.printCredit();
+        }
+        }
+    
 }
