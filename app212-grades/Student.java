@@ -49,9 +49,14 @@ public class Student
      */
     public void awardMark(String moduleCode, int value)
     {
-
-    }
+       
     
+    }
+     //for(Module module : course.modules)
+       // {
+       // if(module.getCode() == moduleCode)
+         //  ModuleMark mark = new ModuleMark( module ,value);    
+       // }
     /**
      * Set the student's course
      */
@@ -67,7 +72,16 @@ public class Student
      */
     public void awardTestMarks()
     {
-        
+            int value = 50;
+        for(Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module);
+            mark.setMark(value);
+            
+            marks.add(mark);
+            
+            value = value + 10;
+        }
     }
     
     /**
@@ -126,7 +140,8 @@ public class Student
         System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
         System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
         
-       
+        printModules();
+        
         Grades finalGrade = course.calculateGrade(marks);
         
         System.out.println();
