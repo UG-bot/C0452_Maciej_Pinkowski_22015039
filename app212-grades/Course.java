@@ -5,7 +5,7 @@ import java.util.ArrayList;
  *
  * @author Derek Peacock and Nicholas Day
  * Modified by Maciej Pinkowski
- * @version 0.1 11/Sep/2020
+ * @version 0.1 26/10/2021
  */
 public class Course
 {

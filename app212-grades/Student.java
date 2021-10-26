@@ -5,7 +5,7 @@ import java.util.*;
  * 
  * @author Michael Kölling and David Barnes
  * Modified by Maciej Pinkowski
- * @version 2021-08-18
+ * @version 26/10/2021
  */
 public class Student
 {
