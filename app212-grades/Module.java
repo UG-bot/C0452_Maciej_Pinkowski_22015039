@@ -4,7 +4,7 @@
  * pass the module with a mark of 40+
  *
  * @author Derek Peacock and Nicholas Day
- * Modyfied by Maciej Pinkowski
+ * Modified by Maciej Pinkowski
  * @version 1.0 26/10/2021
  */
 public class Module
