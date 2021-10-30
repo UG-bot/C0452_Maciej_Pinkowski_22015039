@@ -1,0 +1,30 @@
+Course gameDev = new Course();
+maciej.enrol(gameDev);
+maciej.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22015039, Maciej
+
+ Course CO452: BSc GamesDevelopment
+
+ CO450: Computer Architectures	  15 credits
+ CO452: Programming Concepts  	  15 credits
+ CO259: Game Design           	  15 credits
+ CO461: 3D Modeling           	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO450: Computer Architectures	0	10	F
+
+ CO452: Programming Concepts  	0	15	F
+
+ CO259: Game Design           	0	20	F
+
+ CO461: 3D Modeling           	0	25	F
+
+
+ Final Course Grade = F
