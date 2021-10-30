@@ -38,6 +38,9 @@ public class Student
         marks = new ArrayList<ModuleMark>();
     }
 
+    /**
+     * This of code will add mark to the student
+     */
     public void addMark(ModuleMark mark)
     {
         marks.add(mark);
@@ -52,11 +55,7 @@ public class Student
        
     
     }
-     //for(Module module : course.modules)
-       // {
-       // if(module.getCode() == moduleCode)
-         //  ModuleMark mark = new ModuleMark( module ,value);    
-       // }
+    
     /**
      * Set the student's course
      */
@@ -110,6 +109,9 @@ public class Student
         System.out.println(" Student ID: " + id + ", " + name);
     }
     
+    /**
+     * Print the course details
+     */
     public void printCourse()
     {
         this.print();
@@ -125,6 +127,9 @@ public class Student
      }
     }
     
+    /**
+     * Print transcript
+     */
     public void printTranscript()
     {
         System.out.println(" ------------------------------------");

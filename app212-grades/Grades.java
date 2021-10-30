@@ -18,11 +18,17 @@ public enum Grades
     
     private final int value;
     
+    /**
+     * Constructor for objects of class Grades
+     */
     private Grades(int value)
     {
         this.value = value;
     }
     
+    /**
+     * return the value of the grade
+     */
     public int getValue()
     {
         return value;

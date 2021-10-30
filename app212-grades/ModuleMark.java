@@ -20,6 +20,9 @@ public class ModuleMark
         this.module = module;
     }
     
+    /**
+     * return value of the module mark
+     */
     public int getValue()
     {
         return mark;
@@ -41,11 +44,17 @@ public class ModuleMark
         }
     }
     
+    /**
+     * let's us set the mark in module mark
+     */
     public void setMark(int mark)
     {
         this.mark = mark;
     }
     
+    /**
+     * return module of the module mark
+     */
     public Module getModule()
     {
         return module;

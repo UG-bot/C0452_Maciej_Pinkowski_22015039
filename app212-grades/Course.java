@@ -42,14 +42,16 @@ public class Course
      * modules list for testing purposes.  These
      * must be your four modules.
      */
-    public void createModules()
+     public void createModules()
     {
-        Module co452 = new Module("CO452" , "Programming Concepts  ");
         Module co450 = new Module("CO450" , "Computer Architectures");
+        Module co452 = new Module("CO452" , "Programming Concepts  ");
+        Module co459 = new Module("CO259" , "Game Design           ");
         Module co461 = new Module("CO461" , "3D Modeling           ");
         
-        addModule(co452);
         addModule(co450);
+        addModule(co452);
+        addModule(co459);
         addModule(co461);
     }
     
@@ -61,8 +63,10 @@ public class Course
         }
     }
     
-    /**
-     * 
+    /** 
+     * Rates the mark of the modules from F to A 
+     * if the mark isn't between 0 - 100 program will return 
+     * informatio that the mark was not submitted
      */
     public Grades convertToGrade(int mark)
     {
@@ -113,6 +117,10 @@ public class Course
         printModules();
     }
     
+    /**
+     * Prints out the details of a module and the
+     * module credit
+     */
     public void printModules()
         {for (Module module :modules)
             {module.print();
