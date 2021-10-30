@@ -1,0 +1,31 @@
+Student maciej = new Student();
+Course gameDev = new Course("BT1GDV1", "Games Development");
+maciej.enrol(gameDev);
+maciej.printCourse();
+ Student ID: 22015039, Maciej
+
+ Course BT1GDV1: Games Development
+Module co452 = new Module("CO452", "Programming Concepts");
+gameDev.addModule(co452);
+ModuleMark co452mark = new ModuleMark(co452);
+co452mark.setMark(70);
+maciej.addMark(co452mark);
+maciej.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22015039, Maciej
+
+ Course BT1GDV1: Games Development
+
+ CO452: Programming Concepts	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	15	70	A
+
+
+ Final Course Grade = F
