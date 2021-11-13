@@ -99,7 +99,7 @@ public class StockList
                 "is out of stock");                
             }
             else
-            {System.out.println("Can't sell" + amount + "of" + product.getName() + "because only have");
+            {System.out.println("Can't sell" + amount + "of " + product.getName() + "because only have");
             }
         }
         else
@@ -108,16 +108,28 @@ public class StockList
         }
     }    
     
-    public void buyMoreProduct(int productID, int amount)
+    public void removeProductById(int id)
     {
-        Product product = findProduct(productID);
-        
-        if(product != null)
+        for(Product product : stock)
+            {
+                if(id == product.getID())
+                {
+                    stock.remove(product);
+                
+                }
+            }
+    }
+    
+    public void getProductByKeyword(String keyword)
+    {
+        for(Product product : stock)
         {
-            
+            if(product.getName().contains(keyword))
+            {
+                System.out.println(product.toString());
+            }
         }
     }
-   
     
     /**
      * Locate a product with the given ID, and return how
