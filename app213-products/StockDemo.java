@@ -23,16 +23,16 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
-        stock.add(new Product(104, "Apple iPhone 13"));
-        stock.add(new Product(105, "Xiaomi Mi 11"));
-        stock.add(new Product(106, "Apple iPhone X"));
-        stock.add(new Product(107, "Asus ZenFone 8"));
-        stock.add(new Product(108, "vivo X60 Pro"));
-        stock.add(new Product(109, "realme GT 5G"));
-        stock.add(new Product(110, "Motorola Edge 20 Pro"));
+        stock.add(new Product(11, "Samsung Galaxy S20"));
+        stock.add(new Product(12, "Apple iPhone 12"));
+        stock.add(new Product(13, "Google Pixel 4A"));
+        stock.add(new Product(14, "Apple iPhone 13"));
+        stock.add(new Product(15, "Xiaomi Mi 11"));
+        stock.add(new Product(16, "Apple iPhone X"));
+        stock.add(new Product(17, "Asus ZenFone 8"));
+        stock.add(new Product(18, "vivo X60 Pro"));
+        stock.add(new Product(19, "realme GT 5G"));
+        stock.add(new Product(20, "Motorola Edge 20 Pro"));
         
     }
     

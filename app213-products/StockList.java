@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Manage the stock in a business.
@@ -116,6 +116,10 @@ public class StockList
                 {
                     stock.remove(product);
                 
+                }
+                else
+                {
+                System.out.println("Could not find the item");
                 }
             }
     }
