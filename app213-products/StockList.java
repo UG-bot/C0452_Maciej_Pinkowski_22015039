@@ -69,7 +69,7 @@ public class StockList
             }
         
             }
-        return null;
+        return null; 
     }
     
     public void sellProduct(int productID)
@@ -91,7 +91,7 @@ public class StockList
             if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
                 product.decreaseQuantity(amount);
-                System.out.println("Sold " + amount + " of" + product.getName());               
+                System.out.println("Sold " + amount + " of " + product.getName());               
             }
             else if (product.getQuantity() == 0)
             {
@@ -99,7 +99,7 @@ public class StockList
                 "is out of stock");                
             }
             else
-            {System.out.println("Can't sell" + amount + "of " + product.getName() + "because only have");
+            {System.out.println("Can't sell" + amount + "of " + product.getName() + "because only have " + product.getQuantity());
             }
         }
         else
@@ -131,6 +131,19 @@ public class StockList
         }
     }
     
+    public void getProductsWithLowStock()
+    {
+        System.out.println("Products with low stock:");
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= 50)
+            {
+                System.out.println(product.toString());
+            }
+        }
+    }
+    
+    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -155,6 +168,10 @@ public class StockList
         if(product != null) 
         {
             System.out.println(product.toString());
+        }
+        else 
+        {
+            System.out.println("product not found");
         }
     }
     
