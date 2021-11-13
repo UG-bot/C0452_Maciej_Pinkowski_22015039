@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Manage the stock in a business.
@@ -107,7 +107,16 @@ public class StockList
             System.out.println("Couldn't find");            
         }
     }    
-
+    
+    public void buyMoreProduct(int productID, int amount)
+    {
+        Product product = findProduct(productID);
+        
+        if(product != null)
+        {
+            
+        }
+    }
    
     
     /**

@@ -26,6 +26,14 @@ public class StockDemo
         stock.add(new Product(101, "Samsung Galaxy S20"));
         stock.add(new Product(102, "Apple iPhone 12"));
         stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(104, "Apple iPhone 13"));
+        stock.add(new Product(105, "Xiaomi Mi 11"));
+        stock.add(new Product(106, "Apple iPhone X"));
+        stock.add(new Product(107, "Asus ZenFone 8"));
+        stock.add(new Product(108, "vivo X60 Pro"));
+        stock.add(new Product(109, "realme GT 5G"));
+        stock.add(new Product(110, "Motorola Edge 20 Pro"));
+        
     }
     
     /**
