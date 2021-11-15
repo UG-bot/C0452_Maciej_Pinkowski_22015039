@@ -4,8 +4,8 @@
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Maciej Pinkowski
+ * @version 15.11.2021
  */
 public class StockDemo
 {
@@ -56,31 +56,37 @@ public class StockDemo
         stock.print();        
     }
     
+    /**
+     * buys different quantity of each product
+     */
     private void buyProducts()
     {
-        stock.buyProduct(101, 50);
-        stock.buyProduct(102, 60);
-        stock.buyProduct(103, 70);
-        stock.buyProduct(104, 80);
-        stock.buyProduct(105, 90);
-        stock.buyProduct(106, 100);
-        stock.buyProduct(107, 110);
-        stock.buyProduct(108, 120);
-        stock.buyProduct(109, 130);
-        stock.buyProduct(110, 140);
+        stock.buyProduct(11, 50);
+        stock.buyProduct(12, 60);
+        stock.buyProduct(13, 70);
+        stock.buyProduct(14, 80);
+        stock.buyProduct(15, 90);
+        stock.buyProduct(16, 100);
+        stock.buyProduct(17, 110);
+        stock.buyProduct(18, 120);
+        stock.buyProduct(19, 130);
+        stock.buyProduct(20, 140);
     }
-
+    
+    /**
+     *sells different quantity of each product
+     */
     private void sellProducts()
     {
-        stock.sellProduct(101, 10);
-        stock.sellProduct(102, 15);
-        stock.sellProduct(103, 20);
-        stock.sellProduct(104, 25);
-        stock.sellProduct(105, 30);
-        stock.sellProduct(106, 35);
-        stock.sellProduct(107, 40);
-        stock.sellProduct(108, 45);
-        stock.sellProduct(109, 50);
-        stock.sellProduct(110, 55);
+        stock.sellProduct(11, 10);
+        stock.sellProduct(12, 15);
+        stock.sellProduct(13, 20);
+        stock.sellProduct(14, 25);
+        stock.sellProduct(15, 30);
+        stock.sellProduct(16, 35);
+        stock.sellProduct(17, 40);
+        stock.sellProduct(18, 45);
+        stock.sellProduct(19, 50);
+        stock.sellProduct(20, 55);
     }    
 }

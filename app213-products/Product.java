@@ -1,8 +1,8 @@
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Maciej Pinkowski
+ * @version 15.11.2021
  */
 public class Product
 {
@@ -50,17 +50,26 @@ public class Product
     {
         return quantity;
     }
-
+    
+    /**
+     * sets the quantity of the product
+     */
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
     
+    /**
+     * buys given amount of product
+     */
     public void increaseQuantity(int amount)
     {
         quantity = quantity + amount;
     }
     
+    /**
+     * sells given amount of the product
+     */
     public void decreaseQuantity(int amount)
     {
         if(quantity >= amount)
@@ -75,7 +84,9 @@ public class Product
         return " ID " + id + ": " +  name + " stock level: " + quantity;
     }
 
-    
+    /**
+     * print out the product
+     */
     public void print()
     {
         System.out.println(toString());
