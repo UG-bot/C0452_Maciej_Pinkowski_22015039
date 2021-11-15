@@ -1,0 +1,23 @@
+Product iPhoneXS = new Product(101, "iPhoneXS");
+iPhoneXS.print();
+ ID 101: iPhoneXS stock level: 0
+iPhoneXS.decreaseQuantity(7);
+iPhoneXS.print();
+ ID 101: iPhoneXS stock level: 0
+iPhoneXS.increaseQuantity(3);
+iPhoneXS.print();
+ ID 101: iPhoneXS stock level: 3
+iPhoneXS.decreaseQuantity(1);
+iPhoneXS.print();
+ ID 101: iPhoneXS stock level: 2
+Product samsungGalaxy = new Product(102, "Samsung Galaxy");
+StockList pinkowski = new StockList();
+pinkowski.add(iPhoneXS);
+pinkowski.add(samsungGalaxy);
+pinkowski.print();
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 101: iPhoneXS stock level: 2
+ ID 102: Samsung Galaxy stock level: 0
