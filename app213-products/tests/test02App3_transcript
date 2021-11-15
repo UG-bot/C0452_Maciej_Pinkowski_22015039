@@ -1,0 +1,82 @@
+StockList pinkowski = new StockList();
+StockDemo stockDemo = new StockDemo(pinkowski);
+stockDemo.runDemo();
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 11: Samsung Galaxy S20 stock level: 0
+ ID 12: Apple iPhone 12 stock level: 0
+ ID 13: Google Pixel 4A stock level: 0
+ ID 14: Apple iPhone 13 stock level: 0
+ ID 15: Xiaomi Mi 11 stock level: 0
+ ID 16: Apple iPhone X stock level: 0
+ ID 17: Asus ZenFone 8 stock level: 0
+ ID 18: vivo X60 Pro stock level: 0
+ ID 19: realme GT 5G stock level: 0
+ ID 20: Motorola Edge 20 Pro stock level: 0
+
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 11: Samsung Galaxy S20 stock level: 50
+ ID 12: Apple iPhone 12 stock level: 60
+ ID 13: Google Pixel 4A stock level: 70
+ ID 14: Apple iPhone 13 stock level: 80
+ ID 15: Xiaomi Mi 11 stock level: 90
+ ID 16: Apple iPhone X stock level: 100
+ ID 17: Asus ZenFone 8 stock level: 110
+ ID 18: vivo X60 Pro stock level: 120
+ ID 19: realme GT 5G stock level: 130
+ ID 20: Motorola Edge 20 Pro stock level: 140
+
+Sold 10 of Samsung Galaxy S20
+Sold 15 of Apple iPhone 12
+Sold 20 of Google Pixel 4A
+Sold 25 of Apple iPhone 13
+Sold 30 of Xiaomi Mi 11
+Sold 35 of Apple iPhone X
+Sold 40 of Asus ZenFone 8
+Sold 45 of vivo X60 Pro
+Sold 50 of realme GT 5G
+Sold 55 of Motorola Edge 20 Pro
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 11: Samsung Galaxy S20 stock level: 40
+ ID 12: Apple iPhone 12 stock level: 45
+ ID 13: Google Pixel 4A stock level: 50
+ ID 14: Apple iPhone 13 stock level: 55
+ ID 15: Xiaomi Mi 11 stock level: 60
+ ID 16: Apple iPhone X stock level: 65
+ ID 17: Asus ZenFone 8 stock level: 70
+ ID 18: vivo X60 Pro stock level: 75
+ ID 19: realme GT 5G stock level: 80
+ ID 20: Motorola Edge 20 Pro stock level: 85
+
+pinkowski.getProductByKeyword("iPhone");
+ ID 12: Apple iPhone 12 stock level: 45
+ ID 14: Apple iPhone 13 stock level: 55
+ ID 16: Apple iPhone X stock level: 65
+pinkowski.getProductsWithLowStock();
+Products with low stock:
+ ID 11: Samsung Galaxy S20 stock level: 40
+ ID 12: Apple iPhone 12 stock level: 45
+ ID 13: Google Pixel 4A stock level: 50
+pinkowski.print();
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 11: Samsung Galaxy S20 stock level: 40
+ ID 12: Apple iPhone 12 stock level: 45
+ ID 13: Google Pixel 4A stock level: 50
+ ID 14: Apple iPhone 13 stock level: 55
+ ID 15: Xiaomi Mi 11 stock level: 60
+ ID 16: Apple iPhone X stock level: 65
+ ID 17: Asus ZenFone 8 stock level: 70
+ ID 18: vivo X60 Pro stock level: 75
+ ID 19: realme GT 5G stock level: 80
+ ID 20: Motorola Edge 20 Pro stock level: 85
