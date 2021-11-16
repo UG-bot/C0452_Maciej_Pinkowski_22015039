@@ -34,7 +34,7 @@ public class InputReader
         
         while(!isValid)
         {
-            System.out.print(prompt);         // print prompt
+            System.out.print(prompt);        
             inputLine = reader.nextLine();
             
             if(!inputLine.isEmpty())
