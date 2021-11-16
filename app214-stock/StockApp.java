@@ -10,8 +10,8 @@
 public class StockApp
 {
     private InputReader reader;
-    
-    //private ProductList stock;
+    private StockList stock;
+   
     
     /**
      * Constructor for objects of class StockApp
@@ -19,7 +19,7 @@ public class StockApp
     public StockApp()
     {
         reader = new InputReader();
-        
+        stock = new StockList();
         //stock = new ProductList();
         //StockDemo demo = new StockDemo(stock);
     }
@@ -49,11 +49,23 @@ public class StockApp
         {
             return true;
         }
+        else if(choice.equals("add"))
+        {
+            int id = reader.getInt("Please enter Id for item");
+            String name = reader.getString("Enter name of product");
+            Product product = new Product(id , name);
+            stock.add(product);
+            System.out.println("Product" + product.getID() + "," 
+            + product.getName() + "has been added");
+        }
         else if(choice.equals("print"))
         {
-            //stock.print();
+            stock.print();
         }
+        else if(choice.equals("remove"))
+        {
         
+        }
         return false;
     }
    
