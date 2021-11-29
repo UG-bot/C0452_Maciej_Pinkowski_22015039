@@ -6,45 +6,44 @@ import java.util.ArrayList;
  * 
  * @author Maciej Pinkowski
  * @version 29.11.2021
- * @version 15.11.2021
  */
 public class StockList
 {
-// A list of the products.
-private ArrayList<Product> stock;
+    // A list of the products.
+    private ArrayList<Product> stock;
 
-/**
- * Initialise the stock manager.
- */
-public StockList()
+    /**
+     * Initialise the stock manager.
+     */
+    public StockList()
     {
         stock = new ArrayList<Product>();
     }
 
-/**
- * Add a product to the list.
- * @param item The product item to be added.
- */
-public void add(Product item)
+    /**
+     * Add a product to the list.
+     * @param item The product item to be added.
+     */
+    public void add(Product item)
     {
         stock.add(item);
     }
     
-/**
- * A method to buy a single quantity of the product
- */
-public void buyProduct(int productID)
+    /**
+     * A method to buy a single quantity of the product
+     */
+    public void buyProduct(int productID)
     {
         buyProduct(productID, 1);
     }
     
     
-/**
- * Buy a quantity of a particular product.
- * Increase the quantity of the product by the given amount.
- * @param id The ID of the product.
- * @param amount The amount to increase the quantity by.
- */
+    /**
+     * Buy a quantity of a particular product.
+     * Increase the quantity of the product by the given amount.
+     * @param id The ID of the product.
+     * @param amount The amount to increase the quantity by.
+     */
     public void buyProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
@@ -66,9 +65,11 @@ public void buyProduct(int productID)
             if(product.getID() == productID)
             {
                 return product;
-                
             }
-        
+            else
+            {
+                System.out.println("wrong ID");
+            }
             }
         return null; 
     }
@@ -137,7 +138,6 @@ public void buyProduct(int productID)
                 if(id == product.getID())
                 {
                     stock.remove(product);
-                
                 }
                 else
                 {

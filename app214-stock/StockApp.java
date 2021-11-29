@@ -9,28 +9,27 @@
  */
 public class StockApp
 {
-private InputReader reader;
-private StockList stock;
+    private InputReader reader;
+    private StockList stock;
     
-/**
- * Constructor for objects of class StockApp
-*/
-public StockApp()
-{
-reader = new InputReader();        
-stock = new StockList();
-stock = new StockList();
-//stock = new ProductList();
-//StockDemo demo = new StockDemo(stock);
-}
+    /**
+    * Constructor for objects of class StockApp
+    */
+    public StockApp()
+    {
+        reader = new InputReader();        
+        stock = new StockList();
+        //stock = new ProductList();
+        //StockDemo demo = new StockDemo(stock);
+    }
 
-/**
- *  Display a list of menu choices and execute
- *  the user's choice.
- */
-public void run()
-{
-    boolean finished = false;
+    /**
+     *  Display a list of menu choices and execute
+     *  the user's choice.
+     */
+     void run()
+    {
+        boolean finished = false;
         
         while(!finished)
         {
@@ -43,57 +42,52 @@ public void run()
         }
     }
     
-private boolean executeChoice(String choice)
-{
-    if(choice.equals("quit"))
+    private boolean executeChoice(String choice)
+    {
+        if(choice.equals("quit"))
         {
             return true;
         }
-    if(choice.equals("print"))
+        if(choice.equals("print"))
         {
              printProduct();
         }
-    if(choice.equals("add"))
+        if(choice.equals("add"))
         {
             addProduct();
         }
-    if(choice.equals("buy"))
+        if(choice.equals("buy"))
         {
             buyProduct();
         }
-    if(choice.equals("sell"))
+        if(choice.equals("sell"))
         {
             sellProduct();
         }
-    if(choice.equals("restock"))
+        if(choice.equals("restock"))
         {
             stock.lowStockList();
         }
-    if(choice.equals("search"))
+        if(choice.equals("search"))
         {
             searchProduct();
         }
-    if(choice.equals("low stock"))
+        if(choice.equals("low stock"))
         {
             stock.getProductsWithLowStock();
         }
-    if(choice.equals("remove"))
+        if(choice.equals("remove"))
         {
             removeProduct();
         }
-    if(choice.equals("add"))
+        else
         {
-            int id = reader.getInt("Please enter Id for item");
-            String name = reader.getString("Enter name of product");
-            Product product = new Product(id , name);
-            stock.add(product);
-            System.out.println("Product" + product.getID() + "," 
-            + product.getName() + "has been added");
+            System.out.println("commend not found");
         }
-        return false;
+            return false;
     }
     
-     private void printProduct()
+    private void printProduct()
     {
         stock.print();
         System.out.println("List of products has been printed");
@@ -106,7 +100,7 @@ private boolean executeChoice(String choice)
         Product product = new Product(id, name);
         stock.add(product);
         System.out.println("Product " + product.getID() 
-            + ", " + product.getName() + " has been ADDED");
+        + ", " + product.getName() + " has been ADDED");  
     }
     
     private void buyProduct()
@@ -115,8 +109,7 @@ private boolean executeChoice(String choice)
         System.out.println();
         
         int id = reader.getInt(" Enter a Product ID > ");
-        int amount = reader.getInt(
-        " Enter the Amount to be Bought > ");
+        int amount = reader.getInt(" Enter the Amount to be Bought > ");
         
         Product product = stock.findProduct(id);
         stock.buyProduct(id, amount);
@@ -147,6 +140,7 @@ private boolean executeChoice(String choice)
     
      private void removeProduct()
     {
+        
         int id = reader.getInt("Please enter the ID");
         System.out.println("Removing the product");
         System.out.println();
