@@ -48,7 +48,7 @@ public class StockApp
         {
             return true;
         }
-        if(choice.equals("print"))
+        if  (choice.equals("print"))
         {
              printProduct();
         }
@@ -79,10 +79,6 @@ public class StockApp
         if(choice.equals("remove"))
         {
             removeProduct();
-        }
-        else
-        {
-            System.out.println("commend not found");
         }
             return false;
     }
