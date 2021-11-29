@@ -5,7 +5,11 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Maciej Pinkowski
+<<<<<<< HEAD
  * @version 29.11.2021
+=======
+ * @version 15.11.2021
+>>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
  */
 public class StockList
 {
@@ -112,6 +116,7 @@ public class StockList
         }
     }    
     
+<<<<<<< HEAD
      public void remove(int productID)
     {
         Product product = findProduct(productID);
@@ -124,6 +129,25 @@ public class StockList
         {
             System.out.println("ID doesn't exist ");
         }
+=======
+    /**
+     * removes product by id
+     */
+    public void removeProductById(int id)
+    {
+        for(Product product : stock)
+            {
+                if(id == product.getID())
+                {
+                    stock.remove(product);
+                
+                }
+                else
+                {
+                System.out.println("Could not find the item");
+                }
+            }
+>>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
     }
     
     /**
@@ -148,13 +172,18 @@ public class StockList
         System.out.println("Products with low stock:");
         for(Product product : stock)
         {
+<<<<<<< HEAD
             if(product.getQuantity() <= 5)
+=======
+            if(product.getQuantity() <= 50)
+>>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
             {
                 System.out.println(product.toString());
             }
         }
     }
     
+<<<<<<< HEAD
     public void lowStockList()
     {
         printHeading();
@@ -170,6 +199,8 @@ public class StockList
                 product.print();
             }
     }
+=======
+>>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
     
     /**
      * Locate a product with the given ID, and return how

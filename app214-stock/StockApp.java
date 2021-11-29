@@ -10,8 +10,13 @@
 public class StockApp
 {
     private InputReader reader;
+<<<<<<< HEAD
     
     private StockList stock;
+=======
+    private StockList stock;
+   
+>>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
     
     /**
      * Constructor for objects of class StockApp
@@ -19,8 +24,13 @@ public class StockApp
     public StockApp()
     {
         reader = new InputReader();
+<<<<<<< HEAD
         
         stock = new StockList();
+=======
+        stock = new StockList();
+        //stock = new ProductList();
+>>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
         //StockDemo demo = new StockDemo(stock);
     }
 
@@ -49,6 +59,7 @@ public class StockApp
         {
             return true;
         }
+<<<<<<< HEAD
         if(choice.equals("print"))
         {
              printProduct();
@@ -81,6 +92,25 @@ public class StockApp
         {
             removeProduct();
         }
+=======
+        else if(choice.equals("add"))
+        {
+            int id = reader.getInt("Please enter Id for item");
+            String name = reader.getString("Enter name of product");
+            Product product = new Product(id , name);
+            stock.add(product);
+            System.out.println("Product" + product.getID() + "," 
+            + product.getName() + "has been added");
+        }
+        else if(choice.equals("print"))
+        {
+            stock.print();
+        }
+        else if(choice.equals("remove"))
+        {
+        
+        }
+>>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
         return false;
     }
     
