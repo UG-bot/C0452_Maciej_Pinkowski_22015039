@@ -1,0 +1,132 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > print
+
+ Pinkowski's Stock List
+ ====================
+
+
+List of products has been printed
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > add
+Enter the product ID: 
+101
+Enter the name of the product: game01
+Product 101, game01 has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > add 
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > add
+Enter the product ID: 
+102
+Enter the name of the product: game02
+Product 102, game02 has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > remove
+Please enter the ID
+101
+Removing the product
+
+Product has been Removed game01
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > print
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 102: game02 stock level: 0
+
+List of products has been printed
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > quit
