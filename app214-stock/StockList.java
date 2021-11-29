@@ -5,49 +5,46 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Maciej Pinkowski
-<<<<<<< HEAD
  * @version 29.11.2021
-=======
  * @version 15.11.2021
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
  */
 public class StockList
 {
-    // A list of the products.
-    private ArrayList<Product> stock;
+// A list of the products.
+private ArrayList<Product> stock;
 
-    /**
-     * Initialise the stock manager.
-     */
-    public StockList()
+/**
+ * Initialise the stock manager.
+ */
+public StockList()
     {
         stock = new ArrayList<Product>();
     }
 
-    /**
-     * Add a product to the list.
-     * @param item The product item to be added.
-     */
-    public void add(Product item)
+/**
+ * Add a product to the list.
+ * @param item The product item to be added.
+ */
+public void add(Product item)
     {
         stock.add(item);
     }
     
-    /**
-     * A method to buy a single quantity of the product
-     */
-    public void buyProduct(int productID)
+/**
+ * A method to buy a single quantity of the product
+ */
+public void buyProduct(int productID)
     {
         buyProduct(productID, 1);
     }
     
     
-    /**
-     * Buy a quantity of a particular product.
-     * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
-     * @param amount The amount to increase the quantity by.
-     */
+/**
+ * Buy a quantity of a particular product.
+ * Increase the quantity of the product by the given amount.
+ * @param id The ID of the product.
+ * @param amount The amount to increase the quantity by.
+ */
     public void buyProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
@@ -116,7 +113,6 @@ public class StockList
         }
     }    
     
-<<<<<<< HEAD
      public void remove(int productID)
     {
         Product product = findProduct(productID);
@@ -129,11 +125,12 @@ public class StockList
         {
             System.out.println("ID doesn't exist ");
         }
-=======
+    }
+    
     /**
      * removes product by id
      */
-    public void removeProductById(int id)
+        public void removeProductById(int id)
     {
         for(Product product : stock)
             {
@@ -147,7 +144,7 @@ public class StockList
                 System.out.println("Could not find the item");
                 }
             }
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
+
     }
     
     /**
@@ -172,18 +169,14 @@ public class StockList
         System.out.println("Products with low stock:");
         for(Product product : stock)
         {
-<<<<<<< HEAD
+
             if(product.getQuantity() <= 5)
-=======
-            if(product.getQuantity() <= 50)
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
             {
                 System.out.println(product.toString());
             }
         }
     }
     
-<<<<<<< HEAD
     public void lowStockList()
     {
         printHeading();
@@ -199,8 +192,7 @@ public class StockList
                 product.print();
             }
     }
-=======
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
+
     
     /**
      * Locate a product with the given ID, and return how

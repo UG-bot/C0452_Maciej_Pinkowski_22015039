@@ -61,7 +61,6 @@ public class StockDemo
      */
     private void buyProducts()
     {
-<<<<<<< HEAD
         stock.buyProduct(11, 5);
         stock.buyProduct(12, 6);
         stock.buyProduct(13, 7);
@@ -72,18 +71,7 @@ public class StockDemo
         stock.buyProduct(18, 12);
         stock.buyProduct(19, 13);
         stock.buyProduct(20, 14);
-=======
-        stock.buyProduct(11, 50);
-        stock.buyProduct(12, 60);
-        stock.buyProduct(13, 70);
-        stock.buyProduct(14, 80);
-        stock.buyProduct(15, 90);
-        stock.buyProduct(16, 100);
-        stock.buyProduct(17, 110);
-        stock.buyProduct(18, 120);
-        stock.buyProduct(19, 130);
-        stock.buyProduct(20, 140);
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
+
     }
     
     /**
@@ -91,7 +79,6 @@ public class StockDemo
      */
     private void sellProducts()
     {
-<<<<<<< HEAD
         stock.sellProduct(11, 1);
         stock.sellProduct(12, 1);
         stock.sellProduct(13, 2);
@@ -102,17 +89,6 @@ public class StockDemo
         stock.sellProduct(18, 4);
         stock.sellProduct(19, 5);
         stock.sellProduct(20, 5);
-=======
-        stock.sellProduct(11, 10);
-        stock.sellProduct(12, 15);
-        stock.sellProduct(13, 20);
-        stock.sellProduct(14, 25);
-        stock.sellProduct(15, 30);
-        stock.sellProduct(16, 35);
-        stock.sellProduct(17, 40);
-        stock.sellProduct(18, 45);
-        stock.sellProduct(19, 50);
-        stock.sellProduct(20, 55);
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
+
     }    
 }

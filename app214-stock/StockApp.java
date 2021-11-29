@@ -9,38 +9,28 @@
  */
 public class StockApp
 {
-    private InputReader reader;
-<<<<<<< HEAD
+private InputReader reader;
+private StockList stock;
     
-    private StockList stock;
-=======
-    private StockList stock;
-   
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
-    
-    /**
-     * Constructor for objects of class StockApp
-     */
-    public StockApp()
-    {
-        reader = new InputReader();
-<<<<<<< HEAD
-        
-        stock = new StockList();
-=======
-        stock = new StockList();
-        //stock = new ProductList();
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
-        //StockDemo demo = new StockDemo(stock);
-    }
+/**
+ * Constructor for objects of class StockApp
+*/
+public StockApp()
+{
+reader = new InputReader();        
+stock = new StockList();
+stock = new StockList();
+//stock = new ProductList();
+//StockDemo demo = new StockDemo(stock);
+}
 
-    /**
-     *  Display a list of menu choices and execute
-     *  the user's choice.
-     */
-    public void run()
-    {
-        boolean finished = false;
+/**
+ *  Display a list of menu choices and execute
+ *  the user's choice.
+ */
+public void run()
+{
+    boolean finished = false;
         
         while(!finished)
         {
@@ -53,47 +43,45 @@ public class StockApp
         }
     }
     
-    private boolean executeChoice(String choice)
-    {
-        if(choice.equals("quit"))
+private boolean executeChoice(String choice)
+{
+    if(choice.equals("quit"))
         {
             return true;
         }
-<<<<<<< HEAD
-        if(choice.equals("print"))
+    if(choice.equals("print"))
         {
              printProduct();
         }
-        if(choice.equals("add"))
+    if(choice.equals("add"))
         {
             addProduct();
         }
-        if(choice.equals("buy"))
+    if(choice.equals("buy"))
         {
             buyProduct();
         }
-        if(choice.equals("sell"))
+    if(choice.equals("sell"))
         {
             sellProduct();
         }
-        if(choice.equals("restock"))
+    if(choice.equals("restock"))
         {
             stock.lowStockList();
         }
-        if(choice.equals("search"))
+    if(choice.equals("search"))
         {
             searchProduct();
         }
-        if(choice.equals("low stock"))
+    if(choice.equals("low stock"))
         {
             stock.getProductsWithLowStock();
         }
-        if(choice.equals("remove"))
+    if(choice.equals("remove"))
         {
             removeProduct();
         }
-=======
-        else if(choice.equals("add"))
+    if(choice.equals("add"))
         {
             int id = reader.getInt("Please enter Id for item");
             String name = reader.getString("Enter name of product");
@@ -102,15 +90,6 @@ public class StockApp
             System.out.println("Product" + product.getID() + "," 
             + product.getName() + "has been added");
         }
-        else if(choice.equals("print"))
-        {
-            stock.print();
-        }
-        else if(choice.equals("remove"))
-        {
-        
-        }
->>>>>>> df2fcd17d3063ca61afd0c0dc2152d7b2215c395
         return false;
     }
     
