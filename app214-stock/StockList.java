@@ -114,6 +114,9 @@ public class StockList
         }
     }    
     
+    /**
+     * removes product by id
+     */
      public void remove(int productID)
     {
         Product product = findProduct(productID);
@@ -126,25 +129,6 @@ public class StockList
         {
             System.out.println("ID doesn't exist ");
         }
-    }
-    
-    /**
-     * removes product by id
-     */
-        public void removeProductById(int id)
-    {
-        for(Product product : stock)
-            {
-                if(id == product.getID())
-                {
-                    stock.remove(product);
-                }
-                else
-                {
-                System.out.println("Could not find the item");
-                }
-            }
-
     }
     
     /**
@@ -177,6 +161,9 @@ public class StockList
         }
     }
     
+    /**
+     * restock all the products that are lower then 5
+     */
     public void lowStockList()
     {
         printHeading();

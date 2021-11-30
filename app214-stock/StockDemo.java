@@ -5,7 +5,7 @@
  * the StockManager class is completed.
  * 
  * @author Maciej Pinkowski
- * @version 15.11.2021
+ * @version 2911.2021
  */
 public class StockDemo
 {

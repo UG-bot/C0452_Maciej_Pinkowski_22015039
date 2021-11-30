@@ -2,7 +2,7 @@
  * Model some details of a product sold by a company.
  * 
  * @author Maciej Pinkowski
- * @version 15.11.2021
+ * @version 29.11.2021
  */
 public class Product
 {

@@ -42,6 +42,9 @@ public class StockApp
         }
     }
     
+    /**
+     * 8 different choices for the user
+     */
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
@@ -83,12 +86,18 @@ public class StockApp
             return false;
     }
     
+    /**
+     * prints out the list of products
+     */
     private void printProduct()
     {
         stock.print();
         System.out.println("List of products has been printed");
     }
     
+    /**
+     * let's a user add a product to the list
+     */
     private void addProduct()
     {
         int id = reader.getInt("Enter the product ID: ");
@@ -99,6 +108,9 @@ public class StockApp
         + ", " + product.getName() + " has been ADDED");  
     }
     
+    /**
+     * let's the user buy some amount of a product from the list
+     */
     private void buyProduct()
     {
         System.out.println("Buying a Product");
@@ -114,6 +126,9 @@ public class StockApp
         product.getName());
     }
     
+    /**
+     * let's a user to some amount of product from the list
+     */
     private void sellProduct()
     {
         int id = reader.getInt("Enter a Product ID ");
@@ -126,6 +141,9 @@ public class StockApp
         product.getName());
     }
     
+    /**
+     * let's a user to search product by ID
+     */
     private void searchProduct()
     {  
         int id = reader.getInt("Enter a Product ID "); 
@@ -134,6 +152,9 @@ public class StockApp
         product.getName());
     }
     
+    /**
+     * let's a user to remove item from the list
+     */
      private void removeProduct()
     {
         
