@@ -1,0 +1,146 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > add
+Enter the product ID: 
+11
+Enter the name of the product: game01
+Product 11, game01 has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > buy
+Buying a Product
+
+ Enter a Product ID > 
+11
+ Enter the Amount to be Bought > 
+5
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 11: game01 stock level: 5
+
+Bought 5 of ID 11: game01
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > sell
+Enter a Product ID 
+11
+Enter Amount to sell 
+4
+Sold 4 of game01
+
+ Pinkowski's Stock List
+ ====================
+
+ ID 11: game01 stock level: 1
+
+Sold 4 of ID 11: game01
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > search
+Enter a Product ID 
+11
+Product found: 11: game01
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > low stock
+Products with low stock:
+ ID 11: game01 stock level: 1
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > restock
+
+ Pinkowski's Stock List
+ ====================
+
+If below 5 Increase stock level by 10
+ ID 11: game01 stock level: 11
+********************************
+  App21-04: Stock Application 
+      by Maciej Pinkowski
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Find a product
+    Restock:    Restock a product
+    Low stock   Print all products with low stock
+Please enter your choice > quit
