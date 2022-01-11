@@ -4,18 +4,21 @@
  * linking all the Locations in the game to
  * form a 2D or 3D network
  *
- *  [Pub]<---->[Outside]<---->[Theatre]
- *                 |
- *          [Computer Lab]<---->[Office]
- *             
- * @author Derek Peacock and Nicholas Day
- * @version 2021-08-22
+ *   [Attic]
+ *      |
+ *  [Office]      [Lobby]<--->[RoomOne]
+ *      |            |            |
+ *  [RoomTwo]<-->[Lounge]     [Kitchen]
+ *                                |
+ *                            [Basement]    
+ * @author Maciej Pinkowski
+ * @version 2022-01-11
  */
 public class Map
 {
-    // Need to add a list of exits
+     // Need to add a list of exits
     
-    private Location outside, theater, pub, lab, office;
+    private Location lobby, lounge, roomOne, roomTwo, attic, office, kitchen, basement;
 
     private Location currentLocation;
 
@@ -35,69 +38,91 @@ public class Map
      */
     private void createLocations()
     {
-        createOutside();
-        createTheatre();
-        createPub();
+        createLobby();
+        createLounge();
+        createRoomTwo();
         createOffice();
-        createLab();
+        createAttic();
+        createRoomOne();
+        createKitchen();
+        createBasement();
 
-        currentLocation = outside;  // start game outside
+        currentLocation = lobby;  // start game in lobby
     }
     
     /**
      * Create the outside and link it to the
      * theatre, lab and pub
      */
-    private void createOutside()
+    private void createLobby()
     {
-        outside = new Location("outside the main entrance of the university");
+        lobby = new Location("outside the main entrance of the university");
         
     }
     
     /**
      * Create the pub and link it to the outside
      */
-    private void createPub()
+    private void createRoomTwo()
     {
-        pub = new Location("in the campus pub");
+        roomTwo = new Location("in the campus pub");
         
-        pub.setExit("east", outside);
-        outside.setExit("west", pub);
+        roomTwo.setExit("east", lounge);
+        lounge.setExit("west", roomTwo);
     }
     
     /**
      * Create the theatre linked to the outside
      */
-    private void createTheatre()
+    private void createLounge()
     {
-        theater = new Location("in a lecture theater");
+        lounge = new Location("in a lounge");
         
-        theater.setExit("west", outside);
-        outside.setExit("east", theater);
+        lounge.setExit("north", lobby);
+        lobby.setExit("south", lounge);
+        
+        lounge.setExit("east", roomTwo);
+        roomTwo.setExit("west", lounge);
     }
-    
-    /**
-     * Create the office linked to the lab
-     */
+       
     private void createOffice()
     {
-        office = new Location("in the computing admin office");
+        office = new Location("in an Office");
         
+        office.setExit("south", roomTwo);
+        roomTwo.setExit("north", office);        
     }
     
-    /**
-     * Create the lab and link it to the outside and office
-     */
-    private void createLab()
+    private void createAttic()
     {
-        // create the Locations
-        lab = new Location("in a computing lab");
+        attic = new Location("in the attic");
         
-        lab.setExit("east", office);
-        office.setExit("west", lab);
+        attic.setExit("down", roomTwo);
+        roomTwo.setExit("up", attic);
+    }
+    
+    private void createRoomOne()
+    {
+        roomOne = new Location("in a room");
         
-        lab.setExit("north", outside);
-        outside.setExit("south", lab);
+        roomOne.setExit("east", lobby);
+        lobby.setExit("west", roomOne);
+    }
+    
+    private void createKitchen()
+    {
+        kitchen = new Location("in a kitchen");
+        
+        kitchen.setExit("north", roomOne);
+        roomOne.setExit("south", kitchen);
+    }
+    
+    private void createBasement()
+    {
+        basement = new Location("in a basement");
+        
+        basement.setExit("up", kitchen);
+        kitchen.setExit("down", basement);
     }
     
     public Location getCurrentLocation()
